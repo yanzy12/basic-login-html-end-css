@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("logingambar.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box {
+  position: relative;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  height: 450px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}
+
+.input-box {
+  position: relative;
+  width: 310px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+}
+
+.input-box .icon {
+  position: absolute;
+  color: #fff;
+  right: 8px;
+  font-size: 1.2em;
+  line-height: 57px;
+}
+
+.remember-forgot {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fff;
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.remember-forgot a {
+  color: #fff;
+}
+
+.btn {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: green;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.register-link p a {
+  font-weight: 600;
+  color: #fff;
+}
+
+.social {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9em;
+  border-top: 2px solid #fff;
+}
+
+.social p {
+  margin-top: 10px;
+}
+.social a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.social .fb {
+  background: blue;
+}
+.social .tw {
+  background: rgb(32, 211, 218);
+}
+.social .gg {
+  background: rgb(40, 228, 15);
+}
+
+@media (max-width: 600px) {
+  .login-box {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .login-box {
+    width: 90%;
+  }
+}
